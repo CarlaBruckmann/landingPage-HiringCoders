@@ -8,6 +8,7 @@
     --blue: #0FFFF5;
     --grey-light: rgba(0, 0, 0, 0.4);
     --font-menu: 400 24px 'Roboto Condensed';
+    --font-button: 700 24px 'Roboto Condensed'; 
   --transition: 0.4s ease all;
 
 }
@@ -17,14 +18,24 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+.d-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
 html {
-  background-color: white;
+  background-color: var(--grey);
   color: var(--black);
 }
 body{
     width: 100%;
     max-width: 1535px;
     margin: 0 auto;
+    text-transform: uppercase;
+    background-color: var(--white);
 }
 header{
     background-color: var(--grey-light);
@@ -52,12 +63,43 @@ header nav li i{
     margin: 10px 10px;
     cursor: pointer;
 }
-.d-flex-row{
-    display: flex;
-    flex-direction: row;
+.section-banner{
+    background-color: var(--black);
+    height: auto;
+    align-items: center;
+    color: var(--white);
+    background-image: url('/assets/img/Vector1.svg');
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
-.d-flex-column{
-    position: fixed;
-    display: flex;
-    flex-direction: column;
+.title-section-banner{
+    margin: 150px auto 300px auto; 
+
+}
+h1{
+    font: 700 230px 'Roboto Mono';
+    line-height: 220px;
+}
+h2{
+    font: 400 36px 'Roboto Condensed';
+    padding: 0 12px;
+}
+spam{
+    font: 400 96px 'Roboto Condensed';
+    text-align: end;
+}
+.section-banner .wrapper-btn-section-banner{
+    position: absolute;
+    margin-top: 700px; 
+    justify-content: center;
+}
+.section-banner button{
+    height: 55px;
+    width: 350px;
+    border: none;
+    background-color: var(--blue);
+    text-transform: uppercase;
+    font: var(--font-button);
+    cursor: pointer;
 }
