@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Carla Bruckmann" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -28,13 +28,20 @@
     <title>Black Friday!</title>
   </head>
   <body>
-    <header  role="banner" >
-      <nav id="nav-bar" class="d-flex-row" role="navigation" aria-level="main navigation">
+    <header role="banner">
+      <nav
+        id="nav-bar"
+        class="d-flex-row"
+        role="navigation"
+        aria-level="main navigation"
+      >
         <ul role="menu" class="d-flex-row">
           <li><a href="#home" role="menuitem">HOME</a></li>
           <li><a href="#sales" role="menuitem">SALES</a></li>
           <li><a href="#contact" role="menuitem">CONTACT</a></li>
-          <li><i class="fas fa-shopping-bag" role="menuitem" title="Shopping"></i></li>
+          <li>
+            <i class="fas fa-shopping-bag" role="menuitem" title="Shopping"></i>
+          </li>
           <li><i class="fas fa-user" role="menuitem" title="User"></i></li>
         </ul>
       </nav>
@@ -78,7 +85,7 @@
         <div>
           <div div="wrapper-productCard">
             <div id="productCard">
-              <!-- <img src="assets/img/iphone-7-plus-1766257_1280.png" /> -->
+              <img src="/assets/img/iphone-7-plus-1766257_1280.png" />
               <div>ContadorRegressivo</div>
             </div>
             <div id="productPrice">
@@ -89,7 +96,7 @@
           </div>
           <div div="wrapper-productCard">
             <div id="productCard">
-              <!-- <img src="assets/img/laptop-4353711_1280.png" /> -->
+              <img src="/assets/img/laptop-4353711_1280.png" />
               <div>ContadorRegressivo</div>
             </div>
             <div id="productPrice">
@@ -100,7 +107,7 @@
           </div>
           <div div="wrapper-productCard">
             <div id="productCard">
-              <!-- <img src="assets/img/headphone-1129896_1280.png" /> -->
+              <img src="/assets/img/headphone-1129896_1280.png" />
               <div>ContadorRegressivo</div>
             </div>
             <div id="productPrice">
@@ -119,13 +126,8 @@
           <label id="email-label" for="email"
             >PLEASE ENTER YOUR BEST E-MAIL:</label
           >
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-          />
-          <input type="submit" id="submit"  value="SUBSCRIBE" />
+          <input type="email" name="email" id="email" required />
+          <input type="submit" id="submit" value="SUBSCRIBE" />
           <p id="message"></p>
         </form>
       </section>
@@ -179,6 +181,6 @@
       src="https://kit.fontawesome.com/ec6c9f4d17.js"
       crossorigin="anonymous"
     ></script>
-    <script src="src/main.js"></script>
+    <script src="/src/main.js"></script>
   </body>
 </html>
