@@ -68,7 +68,7 @@ header nav li i{
     height: auto;
     align-items: center;
     color: var(--white);
-    background-image: url('/assets/img/Vector1.svg');
+    background-image: url('assets/img/Vector1.svg');
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
