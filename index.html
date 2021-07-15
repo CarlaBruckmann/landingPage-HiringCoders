@@ -28,14 +28,14 @@
     <title>Black Friday!</title>
   </head>
   <body>
-    <header role="banner">
+    <header id="home" role="banner">
       <nav id="nav-bar" role="navigation" aria-level="main navigation">
         <ul role="menu">
-          <li><a href="#" role="menuitem">HOME</a></li>
-          <li><a href="#" role="menuitem">SALES</a></li>
-          <li><a href="#" role="menuitem">CONTACT</a></li>
-          <li><i class="fas fa-shopping-bag" role="menuitem"></i></li>
-          <li><i class="fas fa-user" role="menuitem"></i></li>
+          <li><a href="#home" role="menuitem">HOME</a></li>
+          <li><a href="#sales" role="menuitem">SALES</a></li>
+          <li><a href="#contact" role="menuitem">CONTACT</a></li>
+          <li><i class="fas fa-shopping-bag" role="menuitem" title="Shopping"></i></li>
+          <li><i class="fas fa-user" role="menuitem" title="User"></i></li>
         </ul>
       </nav>
     </header>
@@ -71,7 +71,7 @@
           <p>Voluntary manufacturer’s warranty.</p>
         </div>
       </section>
-      <section>
+      <section id="sales">
         <div>
           <h3>GET YOUR PRODUCT BEFORE TIME`S UP!</h3>
         </div>
@@ -131,7 +131,7 @@
         </form>
       </section>
     </main>
-    <footer role="contentinfo">
+    <footer id="contact" role="contentinfo">
       <div>
         <div>
           <p>Let us help you:</p>
@@ -157,17 +157,12 @@
             </a>
           </div>
           <div>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-facebook-square" title="Facebook"></i>
+            <i class="fab fa-instagram-square" title="Instagram"></i>
           </div>
         </div>
         <div>
-            <p>Carla Bruckmann - 2021</p>
-            <a
-            title="Free Code Camp"
-            href="https://www.freecodecamp.org/carlabruckmann"
-            class="fab fa-free-code-camp"
-          ></a>
+          <p>Made by Carla Bruckmann | 2021</p>
           <a
             title="GitHub"
             href="https://github.com/CarlaBruckmann"
