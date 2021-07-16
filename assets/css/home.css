@@ -4,15 +4,17 @@
 :root {
     --white: #fff;
     --black: #000;
-    --grey: #F8F8F8;
+    --gray: #F8F8F8;
     --blue: #0FFFF5;
-    --grey-light: rgba(0, 0, 0, 0.4);
+    --gray-light: rgba(0, 0, 0, 0.4);
     --font-menu: 400 24px 'Roboto Condensed';
     --font-button-banner: 700 36px 'Roboto Condensed'; 
     --font-title-card-infos: 700 24px 'Roboto Condensed';
     --font-desc-card-infos: 300 18px 'Roboto Condensed';
+    --font-desc-card-product: 400 30px 'Roboto Condensed';
+    --font-price-product: 700 34px 'Roboto Condensed';
+    --font-button-product: 700 30px 'Roboto Condensed'; 
   --transition: 0.4s ease all;
-
 }
 * {
   padding: 0;
@@ -28,8 +30,12 @@
     display: flex;
     flex-direction: column;
 }
+.d-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
 html {
-  background-color: var(--grey);
+  background-color: var(--gray);
   color: var(--black);
 }
 body{
@@ -40,12 +46,13 @@ body{
     background-color: var(--white);
 }
 header{
-    background-color: var(--grey-light);
+    background-color: var(--gray-light);
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     max-width: 1535px;
+    z-index: 9999;
 }
 header nav{
     justify-content: flex-end;
@@ -66,12 +73,15 @@ header nav li i{
     margin: 10px 10px;
     cursor: pointer;
 }
+main{
+    z-index: 1;
+}
 .section-banner{
     background-color: var(--black);
     height: auto;
     align-items: center;
     color: var(--white);
-    background-image: url('/assets/img/Vector1.svg');
+    background-image: url("/assets/img/Vector1.svg");
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -107,10 +117,8 @@ spam{
     cursor: pointer;
 }
 .section-infos{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 150px 40px;
+    margin: 150px 40px 200px 40px;
 }
 .card-infos{
     flex: 0 1 300px;
@@ -126,7 +134,7 @@ spam{
 }
 .card-infos :nth-child(2){
     font: var(--font-title-card-infos);
-    margin: 0 15px 20px 0;
+    margin-bottom: 20px;
 }
 .card-infos :nth-child(3){
     font: var(--font-desc-card-infos);
@@ -136,5 +144,82 @@ spam{
     box-shadow: 0px 4px 10px rgba(107, 107, 107, 0.25);
 }
 .card-infos-grey{
-    background-color: var(--grey);
+    background-color: var(--gray);
+}
+.section-sales{
+    justify-content: center;
+    align-items: center;
+    margin: 150px 40px 200px 40px;
+}
+h3{
+    border-bottom: solid 1px var(--blue);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font: 700 36px 'Roboto Condensed';
+}
+
+.container-products{
+    justify-content: center;
+}
+.wrapper-productCard{
+    margin-bottom: 100px;
+
+
+}
+.imageCard{
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 530px;
+    margin: 0 20px 30px 20px;
+    background-color: var(--gray);
+}
+.img1{
+    width: 170px;
+    height: 360px;
+}
+.img2{
+    width: 270px;
+    height: 340px;
+}
+.img3{
+    width: 250px;
+    height: 236px;
+}
+.productPrice{
+    align-items: center;
+    justify-content: center;
+}
+.productPrice :first-child{
+ font: var(--font-desc-card-product);
+ margin-bottom: 20px;
+}
+.productPrice :nth-child(2){
+    font: var(--font-price-product);
+    margin-bottom: 20px;
+}
+.productPrice s{
+    text-decoration: line-through;
+}
+.productPrice button{
+        height: 45px;
+        width: 180px;
+        border: none;
+        background-color: var(--blue);
+        text-transform: uppercase;
+        font: var(--font-button-product);
+        cursor: pointer;
+}
+.wrapper-productCard:hover .imageCard,
+.wrapper-productCard:focus .imageCard
+{
+        background-color: var(--white);
+        box-shadow: 6px 6px 20px rgba(49, 48, 48, 0.25);
+        transform: scale(1.05);
+        transition: var(--transition);
+}
+.section-form{
+    justify-content: center;
+    align-items: center;
+    margin: 50px 40px 200px 40px;
 }
