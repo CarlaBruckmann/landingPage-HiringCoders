@@ -8,7 +8,9 @@
     --blue: #0FFFF5;
     --grey-light: rgba(0, 0, 0, 0.4);
     --font-menu: 400 24px 'Roboto Condensed';
-    --font-button: 700 24px 'Roboto Condensed'; 
+    --font-button-banner: 700 36px 'Roboto Condensed'; 
+    --font-title-card-infos: 700 24px 'Roboto Condensed';
+    --font-desc-card-infos: 300 18px 'Roboto Condensed';
   --transition: 0.4s ease all;
 
 }
@@ -50,6 +52,7 @@ header nav{
 }
 header nav ul{
     align-items: center;
+    margin-right: 40px;
 }
 header nav li a,
 header nav li {
@@ -68,7 +71,7 @@ header nav li i{
     height: auto;
     align-items: center;
     color: var(--white);
-    background-image: url('assets/img/Vector1.svg');
+    background-image: url('/assets/img/Vector1.svg');
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -96,10 +99,42 @@ spam{
 }
 .section-banner button{
     height: 55px;
-    width: 350px;
+    width: 300px;
     border: none;
     background-color: var(--blue);
     text-transform: uppercase;
-    font: var(--font-button);
+    font: var(--font-button-banner);
     cursor: pointer;
+}
+.section-infos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 150px 40px;
+}
+.card-infos{
+    flex: 0 1 300px;
+    height: 240px;
+    text-align: center;
+    margin: 10px 10px;
+    justify-content: center;
+}
+.card-infos :nth-child(1){
+    color: var(--blue);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.card-infos :nth-child(2){
+    font: var(--font-title-card-infos);
+    margin: 0 15px 20px 0;
+}
+.card-infos :nth-child(3){
+    font: var(--font-desc-card-infos);
+    margin: 0 15px;
+}
+.card-infos-white{
+    box-shadow: 0px 4px 10px rgba(107, 107, 107, 0.25);
+}
+.card-infos-grey{
+    background-color: var(--grey);
 }
