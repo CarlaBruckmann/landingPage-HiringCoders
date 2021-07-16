@@ -121,16 +121,18 @@
           </div>
         </div>
       </section>
-      <section class="section-form d-flex-column">
-        <div>
+      <section class="section-form">
+        <div class="title-section d-flex-column">
           <h3>GET THE LATEST DEALS IN YOUR INBOX</h3>
         </div>
-        <form id="form">
+        <form id="form" class="d-flex-column">
           <label id="email-label" for="email"
             >PLEASE ENTER YOUR BEST E-MAIL:</label
           >
-          <input type="email" name="email" id="email" required />
-          <input type="submit" id="submit" value="SUBSCRIBE" />
+          <div class="wrapper-input d-flex-row">
+            <input type="email" name="email" id="email" required />
+            <input type="submit" id="submit" value="SUBSCRIBE" />
+          </div>
           <p id="message"></p>
         </form>
       </section>

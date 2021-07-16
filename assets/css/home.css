@@ -2,18 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
 
 :root {
-    --white: #fff;
-    --black: #000;
-    --gray: #F8F8F8;
-    --blue: #0FFFF5;
-    --gray-light: rgba(0, 0, 0, 0.4);
-    --font-menu: 400 24px 'Roboto Condensed';
-    --font-button-banner: 700 36px 'Roboto Condensed'; 
-    --font-title-card-infos: 700 24px 'Roboto Condensed';
-    --font-desc-card-infos: 300 18px 'Roboto Condensed';
-    --font-desc-card-product: 400 30px 'Roboto Condensed';
-    --font-price-product: 700 34px 'Roboto Condensed';
-    --font-button-product: 700 30px 'Roboto Condensed'; 
+  --white: #fff;
+  --black: #000;
+  --gray: #f8f8f8;
+  --blue: #0ffff5;
+  --gray-light: rgba(0, 0, 0, 0.4);
+  --font-menu: 400 24px "Roboto Condensed";
+  --font-button-banner: 700 36px "Roboto Condensed";
+  --font-title-card-infos: 700 24px "Roboto Condensed";
+  --font-desc-card-infos: 300 18px "Roboto Condensed";
+  --font-desc-card-product: 400 30px "Roboto Condensed";
+  --font-price-product: 700 34px "Roboto Condensed";
+  --font-button-product: 700 30px "Roboto Condensed";
+  --font-label: 400 24px "Roboto Condensed";
   --transition: 0.4s ease all;
 }
 * {
@@ -22,204 +23,251 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-.d-flex-row{
-    display: flex;
-    flex-direction: row;
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
 }
-.d-flex-column{
-    display: flex;
-    flex-direction: column;
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
 }
-.d-flex-wrap{
-    display: flex;
-    flex-wrap: wrap;
+.d-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 html {
   background-color: var(--gray);
   color: var(--black);
 }
-body{
-    width: 100%;
-    max-width: 1535px;
-    margin: 0 auto;
-    text-transform: uppercase;
-    background-color: var(--white);
+body {
+  width: 100%;
+  max-width: 1535px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background-color: var(--white);
 }
-header{
-    background-color: var(--gray-light);
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 1535px;
-    z-index: 9999;
+header {
+  background-color: var(--gray-light);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1535px;
+  z-index: 9999;
 }
-header nav{
-    justify-content: flex-end;
+header nav {
+  justify-content: flex-end;
 }
-header nav ul{
-    align-items: center;
-    margin-right: 40px;
+header nav ul {
+  align-items: center;
+  margin-right: 40px;
 }
 header nav li a,
 header nav li {
-    color: var(--blue);
-    margin: 10px 10px;
-    list-style: none;
-    font: var(--font-menu);
+  color: var(--blue);
+  margin: 10px 10px;
+  list-style: none;
+  font: var(--font-menu);
 }
-header nav li i{
-    font-size: 30px;
-    margin: 10px 10px;
-    cursor: pointer;
+header nav li i {
+  font-size: 30px;
+  margin: 10px 10px;
+  cursor: pointer;
 }
-main{
-    z-index: 1;
+main {
+  z-index: 1;
 }
-.section-banner{
-    background-color: var(--black);
-    height: auto;
-    align-items: center;
-    color: var(--white);
-    background-image: url("/assets/img/Vector1.svg");
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
+.section-banner {
+  background-color: var(--black);
+  height: auto;
+  align-items: center;
+  color: var(--white);
+  background-image: url("/assets/img/Vector1.svg");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-.title-section-banner{
-    margin: 150px auto 300px auto; 
+.title-section-banner {
+  margin: 150px auto 300px auto;
+}
+h1 {
+  font: 700 230px "Roboto Mono";
+  line-height: 220px;
+}
+h2 {
+  font: 400 36px "Roboto Condensed";
+  padding: 0 12px;
+}
+spam {
+  font: 400 96px "Roboto Condensed";
+  text-align: end;
+}
+.section-banner .wrapper-btn-section-banner {
+  position: absolute;
+  margin-top: 700px;
+  justify-content: center;
+}
+.section-banner button {
+  height: 55px;
+  width: 300px;
+  border: none;
+  background-color: var(--blue);
+  text-transform: uppercase;
+  font: var(--font-button-banner);
+  cursor: pointer;
+}
+.section-banner button:hover,
+.section-banner button:focus {
+  transform: scale(1.05);
+  transition: var(--transition);
+}
+.section-infos {
+  justify-content: center;
+  margin: 150px 40px 200px 40px;
+}
+.card-infos {
+  flex: 0 1 300px;
+  height: 240px;
+  text-align: center;
+  margin: 10px 10px;
+  justify-content: center;
+}
+.card-infos :nth-child(1) {
+  color: var(--blue);
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.card-infos :nth-child(2) {
+  font: var(--font-title-card-infos);
+  margin-bottom: 20px;
+}
+.card-infos :nth-child(3) {
+  font: var(--font-desc-card-infos);
+  margin: 0 15px;
+}
+.card-infos-white {
+  box-shadow: 0px 4px 10px rgba(107, 107, 107, 0.25);
+}
+.card-infos-grey {
+  background-color: var(--gray);
+}
+.section-sales {
+  justify-content: center;
+  align-items: center;
+  margin: 150px 40px 200px 40px;
+}
+h3 {
+  border-bottom: solid 1px var(--blue);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font: 700 36px "Roboto Condensed";
+}
 
+.container-products {
+  justify-content: center;
 }
-h1{
-    font: 700 230px 'Roboto Mono';
-    line-height: 220px;
+.wrapper-productCard {
+  margin-bottom: 50px;
 }
-h2{
-    font: 400 36px 'Roboto Condensed';
-    padding: 0 12px;
+.imageCard {
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  height: 530px;
+  margin: 0 20px 30px 20px;
+  background-color: var(--gray);
 }
-spam{
-    font: 400 96px 'Roboto Condensed';
-    text-align: end;
+.img1 {
+  width: 170px;
+  height: 360px;
 }
-.section-banner .wrapper-btn-section-banner{
-    position: absolute;
-    margin-top: 700px; 
-    justify-content: center;
+.img2 {
+  width: 270px;
+  height: 340px;
 }
-.section-banner button{
-    height: 55px;
-    width: 300px;
-    border: none;
-    background-color: var(--blue);
-    text-transform: uppercase;
-    font: var(--font-button-banner);
-    cursor: pointer;
+.img3 {
+  width: 250px;
+  height: 236px;
 }
-.section-infos{
-    justify-content: center;
-    margin: 150px 40px 200px 40px;
+.productPrice {
+  align-items: center;
+  justify-content: center;
 }
-.card-infos{
-    flex: 0 1 300px;
-    height: 240px;
-    text-align: center;
-    margin: 10px 10px;
-    justify-content: center;
+.productPrice :first-child {
+  font: var(--font-desc-card-product);
+  margin-bottom: 20px;
 }
-.card-infos :nth-child(1){
-    color: var(--blue);
-    font-size: 60px;
-    margin-bottom: 20px;
+.productPrice :nth-child(2) {
+  font: var(--font-price-product);
+  margin-bottom: 20px;
 }
-.card-infos :nth-child(2){
-    font: var(--font-title-card-infos);
-    margin-bottom: 20px;
+.productPrice s {
+  text-decoration: line-through;
 }
-.card-infos :nth-child(3){
-    font: var(--font-desc-card-infos);
-    margin: 0 15px;
+.productPrice button {
+  height: 45px;
+  width: 180px;
+  border: none;
+  background-color: var(--blue);
+  text-transform: uppercase;
+  font: var(--font-button-product);
+  cursor: pointer;
 }
-.card-infos-white{
-    box-shadow: 0px 4px 10px rgba(107, 107, 107, 0.25);
+.productPrice button:hover,
+.productPrice button:focus {
+  transform: scale(1.05);
+  transition: var(--transition);
 }
-.card-infos-grey{
-    background-color: var(--gray);
+.imageCard:hover,
+.imageCard:focus {
+  background-color: var(--white);
+  box-shadow: 6px 6px 20px rgba(49, 48, 48, 0.25);
+  transform: scale(1.05);
+  transition: var(--transition);
 }
-.section-sales{
-    justify-content: center;
-    align-items: center;
-    margin: 150px 40px 200px 40px;
+.section-form {
+  margin: 50px 0 200px 0;
+  background-color: var(--gray);
 }
-h3{
-    border-bottom: solid 1px var(--blue);
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    font: 700 36px 'Roboto Condensed';
+.title-section {
+  justify-content: center;
+  align-items: center;
 }
-
-.container-products{
-    justify-content: center;
+.section-form h3 {
+  margin-top: 50px;
 }
-.wrapper-productCard{
-    margin-bottom: 100px;
-
-
+form {
+  margin: 0 20%;
 }
-.imageCard{
-    justify-content: center;
-    align-items: center;
-    width: 390px;
-    height: 530px;
-    margin: 0 20px 30px 20px;
-    background-color: var(--gray);
+label {
+  font: var(--font-label);
+  margin: 0 0 20px 0;
 }
-.img1{
-    width: 170px;
-    height: 360px;
+.wrapper-input {
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.1%;
 }
-.img2{
-    width: 270px;
-    height: 340px;
+.wrapper-input :first-child {
+  width: 100%;
+  height: 58px;
+  border: solid 2px var(--blue);
+  padding-left: 10px;
+  background-color: var(--white);
+  outline: none;
+  font: var(--font-desc-card-infos);
 }
-.img3{
-    width: 250px;
-    height: 236px;
+.wrapper-input :last-child {
+  width: 180px;
+  height: 58px;
+  background-color: var(--blue);
+  border: solid 1px var(--blue);
+  font: var(--font-title-card-infos);
+  color: var(--black);
+  cursor: pointer;
 }
-.productPrice{
-    align-items: center;
-    justify-content: center;
-}
-.productPrice :first-child{
- font: var(--font-desc-card-product);
- margin-bottom: 20px;
-}
-.productPrice :nth-child(2){
-    font: var(--font-price-product);
-    margin-bottom: 20px;
-}
-.productPrice s{
-    text-decoration: line-through;
-}
-.productPrice button{
-        height: 45px;
-        width: 180px;
-        border: none;
-        background-color: var(--blue);
-        text-transform: uppercase;
-        font: var(--font-button-product);
-        cursor: pointer;
-}
-.wrapper-productCard:hover .imageCard,
-.wrapper-productCard:focus .imageCard
-{
-        background-color: var(--white);
-        box-shadow: 6px 6px 20px rgba(49, 48, 48, 0.25);
-        transform: scale(1.05);
-        transition: var(--transition);
-}
-.section-form{
-    justify-content: center;
-    align-items: center;
-    margin: 50px 40px 200px 40px;
+form p {
+  font: var(--font-desc-card-infos);
+  color: red;
+  margin: 20px 0 50px 0;
 }
