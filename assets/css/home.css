@@ -87,7 +87,7 @@ main {
   height: auto;
   align-items: center;
   color: var(--white);
-  background-image: url("/assets/img/Vector1.svg");
+  background-image: url("https://raw.githubusercontent.com/CarlaBruckmann/landingPage-HiringCoders/d539570dfbc61370fc20918bea73f455a27a0003/assets/img/Vector1.svg");
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -246,7 +246,7 @@ form {
 }
 label {
   font: var(--font-label);
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 .wrapper-input {
   align-items: center;
@@ -280,7 +280,7 @@ form p {
 footer {
   height: auto;
   background-color: var(--gray);
-  background-image: url("/assets/img/Vector2.svg");
+  background-image: url("https://raw.githubusercontent.com/CarlaBruckmann/landingPage-HiringCoders/d539570dfbc61370fc20918bea73f455a27a0003/assets/img/Vector2.svg");
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
