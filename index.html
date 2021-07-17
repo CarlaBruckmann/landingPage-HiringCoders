@@ -35,7 +35,7 @@
         role="navigation"
         aria-level="main navigation"
       >
-        <ul role="menu" class="d-flex-row">
+        <ul role="menu" class="d-flex-wrap">
           <li><a href="#home" role="menuitem">HOME</a></li>
           <li><a href="#sales" role="menuitem">SALES</a></li>
           <li><a href="#contact" role="menuitem">CONTACT</a></li>
@@ -129,7 +129,7 @@
           <label id="email-label" for="email"
             >PLEASE ENTER YOUR BEST E-MAIL:</label
           >
-          <div class="wrapper-input d-flex-row">
+          <div class="wrapper-input d-flex-row d-responsive-column">
             <input type="email" name="email" id="email" required />
             <input type="submit" id="submit" value="SUBSCRIBE" />
           </div>
@@ -137,49 +137,42 @@
         </form>
       </section>
     </main>
-    <footer id="contact" role="contentinfo">
-      <div>
+    <footer id="contact" role="contentinfo" class="d-flex-column">
+      <div class="section-contact d-flex-wrap">
         <div>
           <p>Let us help you:</p>
           <ul>
             <li>Your Account</li>
             <li>Your Orders</li>
-            <li>Shipping Rates & Policies</li>
-            <li>Returns & Replacements</li>
             <li>Help</li>
           </ul>
         </div>
-        <div>
-          <p>Contact</p>
-        </div>
-        <div>
-          <div>
-            <a
-              title="Email"
-              href="mailto:email@email.com&text=Enter%20your%20message."
-              class="fas fa-envelope-square"
-              target="_blank"
-              >blackfriday@contato.com.br
-            </a>
-          </div>
-          <div>
+        <div class="d-flex-column">
+          <p>Contact:</p>
+          <a
+            title="Email"
+            href="mailto:email@email.com&text=Enter%20your%20message."
+            target="_blank"
+            >blackfriday@contato.com.br
+          </a>
+          <p>
             <i class="fab fa-facebook-square" title="Facebook"></i>
             <i class="fab fa-instagram-square" title="Instagram"></i>
-          </div>
+          </p>
         </div>
-        <div>
-          <p>Made by Carla Bruckmann | 2021</p>
-          <a
-            title="GitHub"
-            href="https://github.com/CarlaBruckmann"
-            class="fab fa-github"
-          ></a>
-          <a
-            title="Linkedin"
-            href="https://www.linkedin.com/in/carla-bruckmann-271576ba/"
-            class="fab fa-linkedin"
-          ></a>
-        </div>
+      </div>
+      <div class="author d-flex-row">
+        <p>Made by Carla Bruckmann | 2021</p>
+        <a
+          title="GitHub"
+          href="https://github.com/CarlaBruckmann"
+          class="fab fa-github"
+        ></a>
+        <a
+          title="Linkedin"
+          href="https://www.linkedin.com/in/carla-bruckmann-271576ba/"
+          class="fab fa-linkedin"
+        ></a>
       </div>
     </footer>
     <script

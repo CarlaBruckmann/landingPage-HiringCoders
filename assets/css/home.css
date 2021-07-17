@@ -5,6 +5,7 @@
   --white: #fff;
   --black: #000;
   --gray: #f8f8f8;
+  --gray-bold: #58555a;
   --blue: #0ffff5;
   --gray-light: rgba(0, 0, 0, 0.4);
   --font-menu: 400 24px "Roboto Condensed";
@@ -15,6 +16,9 @@
   --font-price-product: 700 34px "Roboto Condensed";
   --font-button-product: 700 30px "Roboto Condensed";
   --font-label: 400 24px "Roboto Condensed";
+  --font-title-contact: 700 24px "Roboto Condensed";
+  --font-link-contact: 300 18px "Roboto Condensed";
+  --font-author: 700 12px "Roboto Mono";
   --transition: 0.4s ease all;
 }
 * {
@@ -36,8 +40,9 @@
   flex-wrap: wrap;
 }
 html {
-  background-color: var(--gray);
+  background-color: #e5e5e5;
   color: var(--black);
+  scroll-behavior: smooth;
 }
 body {
   width: 100%;
@@ -60,7 +65,7 @@ header nav {
 }
 header nav ul {
   align-items: center;
-  margin-right: 40px;
+  margin: 0 40px;
 }
 header nav li a,
 header nav li {
@@ -226,7 +231,7 @@ h3 {
   transition: var(--transition);
 }
 .section-form {
-  margin: 50px 0 200px 0;
+  margin: 50px 0 0 0;
   background-color: var(--gray);
 }
 .title-section {
@@ -234,7 +239,7 @@ h3 {
   align-items: center;
 }
 .section-form h3 {
-  margin-top: 50px;
+  margin: 50px 40px 0 40px;
 }
 form {
   margin: 0 20%;
@@ -270,4 +275,57 @@ form p {
   font: var(--font-desc-card-infos);
   color: red;
   margin: 20px 0 50px 0;
+}
+
+footer {
+  height: auto;
+  background-color: var(--gray);
+  background-image: url("/assets/img/Vector2.svg");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.section-contact {
+  justify-content: flex-end;
+  margin: 200px 100px 50px 100px;
+}
+.section-contact div {
+  margin: 20px 20px;
+}
+.section-contact p {
+  font: var(--font-title-contact);
+}
+.section-contact li,
+.section-contact a {
+  margin: 10px 0;
+  list-style: none;
+  font: var(--font-link-contact);
+  text-transform: none;
+  color: var(--black);
+  cursor: pointer;
+}
+.section-contact i {
+  font-size: 44px;
+  cursor: pointer;
+}
+.section-contact i:hover,
+.section-contact li:hover,
+.section-contact a:hover,
+.author a:hover {
+  color: var(--blue);
+}
+.fa-facebook-square {
+  margin-right: 20px;
+}
+.author {
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
+  font: var(--font-author);
+  padding: 10px;
+}
+.author a {
+  color: var(--black);
+  font-size: 15px;
+  margin: 0 5px;
 }
