@@ -74,7 +74,7 @@
     margin: 200px 20px 50px 20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   h1 {
     font: 700 100px "Roboto Mono";
   }
