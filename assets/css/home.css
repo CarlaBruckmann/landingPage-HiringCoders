@@ -137,16 +137,16 @@ h2 {
   margin: 10px 10px;
   justify-content: center;
 }
-.card-infos :nth-child(1) {
+.card-infos i {
   color: var(--blue);
   font-size: 60px;
   margin-bottom: 20px;
 }
-.card-infos :nth-child(2) {
+.card-infos .title-card-infos {
   font: var(--font-title-card-infos);
   margin-bottom: 20px;
 }
-.card-infos :nth-child(3) {
+.card-infos .desc-card-infos {
   font: var(--font-desc-card-infos);
   margin: 0 15px;
 }
