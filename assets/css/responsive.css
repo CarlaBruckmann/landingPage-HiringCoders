@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+  form {
+    margin: 20px 40px 0 40px;
+  }
+}
+@media screen and (max-width: 756px) {
+  .title-section-banner {
+    margin: 200px auto 300px auto;
+  }
+  h1 {
+    font: 700 180px "Roboto Mono";
+    line-height: 150px;
+  }
+  h2 {
+    font: 400 26px "Roboto Condensed";
+  }
+  spam {
+    font: 400 76px "Roboto Condensed";
+  }
+  .section-banner .wrapper-btn-section-banner {
+    margin-top: 600px;
+  }
+  h3 {
+    font: 700 34px "Roboto Condensed";
+    text-align: center;
+  }
+  .d-responsive-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper-input :last-child {
+    margin-top: 20px;
+  }
+  .section-contact {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav ul {
+    justify-content: flex-end;
+    margin: 0 20px;
+  }
+  header nav li a {
+    font-size: 20px;
+  }
+  h1 {
+    font: 700 130px "Roboto Mono";
+    line-height: 150px;
+  }
+}
+@media screen and (max-width: 440px) {
+  h1 {
+    font: 700 110px "Roboto Mono";
+  }
+  h2 {
+    font: 400 26px "Roboto Condensed";
+  }
+  spam {
+    font: 400 76px "Roboto Condensed";
+  }
+  .section-banner .wrapper-btn-section-banner {
+    margin-top: 600px;
+  }
+  .imageCard {
+    width: 300px;
+  }
+  .section-contact {
+    margin: 200px 20px 50px 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font: 700 100px "Roboto Mono";
+  }
+  h2 {
+    font: 400 26px "Roboto Condensed";
+  }
+  spam {
+    font: 400 56px "Roboto Condensed";
+  }
+  .imageCard {
+    width: 260px;
+    height: 500px;
+  }
+  .img1 {
+    width: 150px;
+    height: 300px;
+  }
+  .img2 {
+    width: 200px;
+    height: 250px;
+  }
+  .img3 {
+    width: 200px;
+    height: 206px;
+  }
+}
