@@ -112,17 +112,17 @@ h2 {
   margin-top: 700px;
   justify-content: center;
 }
-.section-banner button {
-  height: 55px;
-  width: 300px;
+.section-banner a {
+  padding: 15px 90px;
   border: none;
   background-color: var(--blue);
   text-transform: uppercase;
   font: var(--font-button-banner);
   cursor: pointer;
+  color: var(--black);
 }
-.section-banner button:hover,
-.section-banner button:focus {
+.section-banner a:hover,
+.section-banner a:focus {
   transform: scale(1.05);
   transition: var(--transition);
 }
@@ -225,17 +225,16 @@ h3 {
 .productPrice s {
   text-decoration: line-through;
 }
-.productPrice button {
-  height: 45px;
-  width: 180px;
+.productPrice a {
+  padding: 10px 30px;
   border: none;
   background-color: var(--blue);
   text-transform: uppercase;
   font: var(--font-button-product);
   cursor: pointer;
 }
-.productPrice button:hover,
-.productPrice button:focus {
+.productPrice a:hover,
+.productPrice a:focus {
   transform: scale(1.05);
   transition: var(--transition);
 }
